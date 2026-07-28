@@ -1,0 +1,42 @@
+.menu_page {
+  padding: 70px 60px;
+  background-color: var(--color-bg);
+}
+
+.menu_filters {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.menu_filter_btn {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding: 10px 22px;
+  border: 1px solid var(--color-line);
+  background-color: var(--color-panel-light);
+  color: var(--color-cream);
+  border-radius: 24px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 0.2s ease;
+}
+
+.menu_filter_btn.active {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: #0e0805;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.menu_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

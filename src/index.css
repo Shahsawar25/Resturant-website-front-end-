@@ -1,0 +1,30 @@
+:root {
+  --color-bg: #0d1f16;
+  --color-bg-deep: #16321f;
+  --color-panel: #0a0a0a;
+  --color-panel-light: #1c3524;
+  --color-gold: #c9a227;
+  --color-gold-light: #e0b93d;
+  --color-cream: #f0e6d2;
+  --color-line: rgba(201, 162, 39, 0.25);
+
+  --font-gothic: 'UnifrakturMaguntia', serif;
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Cormorant Garamond', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-cream);
+}
+html {
+  scroll-behavior: smooth;
+}
+

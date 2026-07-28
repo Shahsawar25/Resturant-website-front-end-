@@ -1,0 +1,118 @@
+.reservation_hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background-image:
+    linear-gradient(rgba(10,10,10,0.55), rgba(10,10,10,0.75)),
+    url('../assets/images/gallery/interior7.jpg');
+  background-size: cover;
+  background-position: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.reservation_hero_left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.reservation_hero_left h1 {
+  font-family: var(--font-gothic);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-gold);
+  margin-bottom: 24px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.reservation_hero_left p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-cream);
+  opacity: 0.85;
+}
+
+.reservation_card {
+  flex: 0 0 420px;
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  padding: 45px 40px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.5);
+}
+
+.reservation_form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reservation_form input,
+.reservation_form select {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-cream);
+  background-color: var(--color-panel-light);
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.reservation_form input::placeholder {
+  color: var(--color-cream);
+  opacity: 0.4;
+}
+
+.reservation_form input:focus,
+.reservation_form select:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.reservation_btn {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0e0805;
+  background-color: var(--color-gold);
+  border: none;
+  padding: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.reservation_btn:hover {
+  background-color: var(--color-gold-light);
+}
+
+.reservation_success {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-cream);
+}
+
+@media (max-width: 900px) {
+  .reservation_hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 30px;
+  }
+  .reservation_hero_left h1 {
+    font-size: 32px;
+  }
+  .reservation_card {
+    flex: 1;
+    width: 100%;
+    max-width: 420px;
+  }
+}

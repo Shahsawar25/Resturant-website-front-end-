@@ -1,0 +1,139 @@
+/* The main navbar bar itself */
+.navbar {
+  position: sticky; /* stays fixed at the top when you scroll down */
+  top: 0;
+  z-index: 100; /* keeps navbar above other page content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.navbar_wordmark {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  opacity: 0.85;
+}
+/* Hamburger icon button hidden by default  */
+.navbar_toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-gold);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navbar_center {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar_logo_badge {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--color-gold);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-gothic);
+  font-size: 22px;
+  color: var(--color-gold);
+  background-color: var(--color-panel-light);
+  flex-shrink: 0;
+}
+
+.navbar_links {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+}
+
+.navbar_links li a {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: var(--color-cream);
+  text-decoration: none;
+  opacity: 0.8;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar_links li a:hover {
+  color: var(--color-gold-light);
+  opacity: 1;
+}
+
+.navbar_links li a.active {
+  color: var(--color-gold);
+  opacity: 1;
+  border-bottom: 1px solid var(--color-gold); /* the gold underline on current page */
+}
+
+.navbar_reserve_btn {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #0e0805;
+  background-color: var(--color-gold);
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar_reserve_btn:hover {
+  background-color: var(--color-gold-light);
+}
+
+.navbar_profile {
+  font-size: 24px;
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Navigation */
+@media (max-width: 900px) {
+  .navbar_toggle {
+    display: block;
+  }
+
+  .navbar_center {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px;
+    gap: 20px;
+    border-bottom: 1px solid var(--color-line);
+    display: none;
+  }
+
+  .navbar_center.open {
+    display: flex;
+  }
+
+  .navbar_links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .navbar_logo_badge {
+    display: none;
+  }
+}

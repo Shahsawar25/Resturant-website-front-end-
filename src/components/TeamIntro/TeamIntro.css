@@ -1,0 +1,35 @@
+.team_intro_section {
+  padding: 90px 60px;
+  background-color: var(--color-bg-deep);
+  text-align: center;
+}
+
+.team_intro_heading {
+  font-family: var(--font-gothic);
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--color-gold);
+  margin-bottom: 24px;
+}
+
+.team_intro_text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--color-cream);
+  opacity: 0.65;
+  max-width: 550px;
+  margin: 0 auto 24px;
+}
+
+.team_intro_link {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+.team_intro_link:hover {
+  color: var(--color-gold-light);
+}
